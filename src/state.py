@@ -12,7 +12,7 @@ from __future__ import annotations
 import operator
 from typing import Annotated, List, Literal, TypedDict
 
-from langchain_core.messages import AnyMessage
+from langchain.messages import AnyMessage
 from pydantic import BaseModel, Field
 
 

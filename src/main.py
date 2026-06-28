@@ -14,7 +14,7 @@ import uuid
 
 from langgraph.types import Command
 
-from langchain_core.messages import HumanMessage
+from langchain.messages import HumanMessage
 
 from src.config import get_logger
 from src.graph import axiomcart_graph

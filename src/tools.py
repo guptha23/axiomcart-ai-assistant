@@ -14,7 +14,7 @@ from __future__ import annotations
 import random
 import time
 
-from langchain_core.tools import tool
+from langchain.tools import tool
 
 from src.data import ESCALATION_QUEUE
 from src.config import get_logger

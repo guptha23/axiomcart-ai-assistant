@@ -26,7 +26,7 @@ from __future__ import annotations
 import operator
 from typing import Annotated, Literal, TypedDict
 
-from langchain_core.messages import AIMessage, AnyMessage, HumanMessage, SystemMessage, ToolMessage
+from langchain.messages import AIMessage, AnyMessage, HumanMessage, SystemMessage, ToolMessage
 from langgraph.graph import END, START, StateGraph
 from langgraph.types import Command, Send, interrupt
 
