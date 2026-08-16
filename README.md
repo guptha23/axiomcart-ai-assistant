@@ -126,6 +126,37 @@ git clone https://github.com/nsr-19/axiomcart-ai-assistant.git
 cd axiomcart-ai-assistant
 ```
 
+## Setup
+
+### 1 — Install uv (if you don't have it)
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+uv is a drop-in replacement for `pip` + `venv` that is ~10× faster.
+Use `pip install` everywhere below if you prefer the standard tooling — the commands are identical.
+
+### 2 — Create a virtual environment
+
+```bash
+cd snack_stack
+uv venv                        # creates .venv/ in the project folder
+source .venv/bin/activate      # macOS / Linux
+# .venv\Scripts\activate       # Windows
+```
+
+> **Why a venv?**  Isolates this project's dependencies from your system Python.
+> Every `import` resolves to packages inside `.venv/`, not globally installed ones.
+> This prevents version conflicts across projects and makes the environment reproducible.
+
+### 3 — Install dependencies
+
+```bash
+uv pip install -r requirements.txt
+```
+
+
 ### 2. Install dependencies
 
 With `uv` (recommended):
